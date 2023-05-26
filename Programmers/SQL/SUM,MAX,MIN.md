@@ -27,6 +27,11 @@ order by DATETIME desc
 limit 1
 ```
 
+```sql
+SELECT MAX(DATETIME)
+FROM ANIMAL_INS
+```
+
 </br>
 
 ### 최솟값 구하기
