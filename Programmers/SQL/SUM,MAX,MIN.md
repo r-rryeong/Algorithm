@@ -43,6 +43,11 @@ order by DATETIME
 limit 1
 ```
 
+```sql
+SELECT MIN(DATETIME)
+FROM ANIMAL_INS
+```
+
 </br>
 
 ### 중복 제거하기
