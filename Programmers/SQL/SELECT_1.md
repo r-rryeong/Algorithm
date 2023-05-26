@@ -63,6 +63,15 @@ where A.TOTAL_ORDER >3000 AND B.INGREDIENT_TYPE = 'fruit_based'
 order by A.TOTAL_ORDER desc
 ```
 
+```sql
+SELECT H.FLAVOR
+FROM FIRST_HALF H
+    JOIN ICECREAM_INFO I
+    ON H.FLAVOR = I.FLAVOR
+WHERE H.TOTAL_ORDER > 3000 AND I.INGREDIENT_TYPE = "fruit_based"
+ORDER BY H.TOTAL_ORDER DESC
+```
+
 </br>
 
 ### 12세 이하인 여자 환자 목록 출력하기
