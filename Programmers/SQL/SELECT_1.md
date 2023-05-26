@@ -83,6 +83,13 @@ where GEND_CD = 'W' and AGE <= 12
 order by AGE desc, PT_NAME
 ```
 
+```sql
+SELECT PT_NAME, PT_NO, GEND_CD, AGE, IFNULL(TLNO, "NONE") TLNO
+FROM PATIENT
+WHERE AGE <= 12 AND GEND_CD = "W"
+ORDER BY AGE DESC, PT_NAME
+```
+
 </br>
 
 ### 강원도에 위치한 생산공장 목록 출력하기
