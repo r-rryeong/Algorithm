@@ -87,6 +87,16 @@ ORDER BY FACTORY_ID ASC
 
 </br>
 
+### 인기있는 아이스크림
+
+```sql
+SELECT FLAVOR
+FROM FIRST_HALF
+ORDER BY TOTAL_ORDER DESC, SHIPMENT_ID
+```
+
+</br>
+
 #### 🌱 TIL
 
 - IFNULL과 NVL
