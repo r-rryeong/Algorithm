@@ -74,6 +74,19 @@ where GEND_CD = 'W' and AGE <= 12
 order by AGE desc, PT_NAME
 ```
 
+</br>
+
+### 강원도에 위치한 생산공장 목록 출력하기
+
+```sql
+SELECT FACTORY_ID, FACTORY_NAME, ADDRESS
+FROM FOOD_FACTORY
+WHERE ADDRESS LIKE '%강원도%'
+ORDER BY FACTORY_ID ASC
+```
+
+</br>
+
 #### 🌱 TIL
 
 - IFNULL과 NVL
