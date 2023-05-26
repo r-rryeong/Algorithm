@@ -58,6 +58,13 @@ from ANIMAL_INS
 where name is not null
 ```
 
+```sql
+SELECT COUNT(DISTINCT NAME) count
+FROM ANIMAL_INS
+```
+
+- COUNT(컬럼명)을 사용하면 NULL값을 제외하고 COUNT한다.
+
 </br>
 
 ### 동물 수 구하기
