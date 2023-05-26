@@ -67,3 +67,8 @@ select count(*)
 from ANIMAL_INS
 ```
 
+```sql
+SELECT COUNT(*) count
+FROM ANIMAL_INS
+```
+
