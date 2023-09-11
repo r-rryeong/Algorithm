@@ -34,3 +34,20 @@ class Solution {
 }
 ```
 
+```java
+class Solution {
+    public int solution(String before, String after) {
+        int answer = 1;
+        for (int i=0;i<after.length();i++) {
+            String ss=String.valueOf(after.charAt(i));
+            
+            if (before.contains(ss)) {
+                before = before.replaceFirst(ss,"");  //처음 만나는 문자만 치환
+            } else return 0;
+        }
+        
+        return answer;
+    }
+}
+```
+
