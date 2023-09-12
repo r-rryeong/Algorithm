@@ -51,3 +51,26 @@ class Solution {
 }
 ```
 
+```java
+import java.util.*;
+
+class Solution {
+    public int solution(String before, String after) {
+        int answer = 0;
+        char[] b = before.toCharArray();
+        char[] a = after.toCharArray();
+        Arrays.sort(b);
+        Arrays.sort(a);
+        
+        String str_b = String.valueOf(b);  //char[]를 바로 string형으로 변환 가능
+        String str_a = String.valueOf(a);
+        
+        if (str_b.equals(str_a)) {
+            answer = 1;
+        }
+        
+        return answer;
+    }
+}
+```
+
