@@ -22,7 +22,15 @@ class Solution {
 class Solution {
     public int solution(int i, int j, int k) {
         int answer = 0;
-
+        
+        for(int n=i; n<=j; n++) {
+            String[] number = String.valueOf(n).split("");
+            
+            for(int idx=0;idx<number.length;idx++){
+                int tmp = Integer.parseInt(number[idx]);
+                if(tmp == k) answer++;
+            }
+        }
         return answer;
     }
 }
