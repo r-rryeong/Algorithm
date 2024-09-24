@@ -16,3 +16,15 @@ def solution(array, commands):
     return answer
 ```
 
+```python
+def solution(array, commands):
+    answer = []
+    N = len(commands)
+    for n in range(N):
+        i, j, k = commands[n][0]-1, commands[n][1]-1, commands[n][2]-1
+        arr = sorted(array[i:j+1])
+        answer.append(arr[k])
+        
+    return answer
+```
+
