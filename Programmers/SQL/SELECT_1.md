@@ -197,4 +197,12 @@ WHERE TO_CHAR(JOINED, 'YYYY') = '2021' AND
   Oracle의 경우에는 NVL(VALUE1, VALUE2)
 
   ⇒ value1의 값이 null이면 value2의 값을 출력한다.
+  
+- ROWNUM과 LIMIT
+
+  가져오는 데이터 수에 원하는 만큼 제한을 두는 함수
+
+  MySQL의 경우는 LIMIT
+
+  Oracle의 경우에는 WHERE 뒤에 ROWNUM을 사용
 
