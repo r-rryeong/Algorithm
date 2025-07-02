@@ -166,7 +166,25 @@ WHERE ROWNUM = 1;
 
 </br>
 
+### Python 개발자 찾기
 
+```sql
+SELECT ID, EMAIL, FIRST_NAME, LAST_NAME FROM DEVELOPER_INFOS
+WHERE 'Python' IN (SKILL_1, SKILL_2, SKILL_3)
+ORDER BY ID
+```
+
+</br>
+
+### 조건에 맞는 회원수 구하기
+
+```sql
+SELECT COUNT(*) AS USERS FROM USER_INFO
+WHERE TO_CHAR(JOINED, 'YYYY') = '2021' AND
+    AGE >= 20 AND AGE <=29
+```
+
+</br>
 
 #### 🌱 TIL
 
